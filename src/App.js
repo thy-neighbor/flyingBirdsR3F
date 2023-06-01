@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Canvas } from "@react-three/fiber";
+import Birds from "./World/models/Birds";
+import { OrbitControls } from "@react-three/drei";
+import "./App.css";
+import Lights from "./World/components/Lights";
+import Gridlines from "./World/components/Gridlines";
 
 function App() {
+  const { Parrot, Flamingo, Stork } = Birds();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="canvas-container">
+      <Canvas>
+        {/*camera={{ position: [-3, 1.5, 12], fov: 26, aspect: window.innerWidth / window.innerHeight, near: 0.1, far: 100 }} */}
+        <Gridlines />
+        <OrbitControls />
+        <Lights />
+        <Parrot />
+        <Flamingo />
+        <Stork />
+      </Canvas>
     </div>
   );
 }
