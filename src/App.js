@@ -11,8 +11,8 @@ function App() {
 
   return (
     <div id="canvas-container">
-      <Canvas>
-        {/*camera={{ position: [-3, 1.5, 12], fov: 26, aspect: window.innerWidth / window.innerHeight, near: 0.1, far: 100 }} */}
+      <Canvas
+        camera={{ position: [-3, 1.5, 12], fov: 26, aspect: window.innerWidth / window.innerHeight, near: 0.1, far: 100 }} >
         <Gridlines />
         <OrbitControls />
         <Lights />
