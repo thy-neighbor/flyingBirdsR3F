@@ -1,9 +1,10 @@
+
 # flyingBirdsR3F
 A React Three Fiber version of the final Three.js app created in the discoverthreejs virtual textbook
 
 ## Screenshots
 
-![Main page](Screenshots/adicolor-desktop.JPG)
+![Main Screen](public/ScreenGrab.JPG)
 
 ## Technology Used
 
@@ -12,3 +13,4 @@ A React Three Fiber version of the final Three.js app created in the discoverthr
 #### HTML
 #### CSS
 #### JavaScript
+
